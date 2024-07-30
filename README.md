@@ -1,4 +1,7 @@
 # Wordle Recreation!
+
+![Python application](https://github.com/tarunsreedhars/WordleRecreation/workflows/run_tests/badge.svg)
+
 I am Recreating the classic game "[Wordle](https://www.nytimes.com/games/wordle/index.html)" for my University Project
 
 ## How to setup (Linux/Mac)
