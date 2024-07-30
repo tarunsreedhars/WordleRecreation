@@ -1,5 +1,5 @@
-annotated-types==0.7.0
-pydantic==2.8.2
-pydantic_core==2.20.1
+iniconfig==2.0.0
+packaging==24.1
+pluggy==1.5.0
 pygame==2.6.0
-typing_extensions==4.12.2
+pytest==8.3.2
