@@ -4,9 +4,11 @@ import pytest
 from unittest.mock import patch, Mock
 from main import Main
 
+
 @pytest.fixture
 def game_instance():
     return Main()
+
 
 def test_initialization(game_instance):
     assert game_instance.input == ""
@@ -14,7 +16,8 @@ def test_initialization(game_instance):
     assert game_instance.unguessed == "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     assert game_instance.game_over == False
 
-@patch('main.random.choice')
+
+@patch("main.random.choice")
 def test_reset_game(mock_random_choice, game_instance):
     mock_random_choice.return_value = "SLATE"
     game_instance.reset_game()
