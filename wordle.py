@@ -1,18 +1,19 @@
 from config import ALPHABET, GREY, GREEN, YELLOW
+from typing import List, Tuple
 
 
-def load_dict(file_name):
+def load_dict(file_name: str) -> List[str]:
     with open(file_name) as file:
         words = file.readlines()
     return [word.strip().upper() for word in words]
 
 
-def determine_unguessed_letters(guesses):
+def determine_unguessed_letters(guesses: List[str]) -> str:
     guessed_letters = "".join(guesses)
     return "".join(letter for letter in ALPHABET if letter not in guessed_letters)
 
 
-def determine_color(guess, j, answer):
+def determine_color(guess: str, j: int, answer: str) -> Tuple[int, int, int]:
     letter = guess[j]
     if letter == answer[j]:
         return GREEN

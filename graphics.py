@@ -12,22 +12,25 @@ from config import (
     B_MARGIN,
 )
 from wordle import determine_color
+from pygame.font import Font
+from pygame.surface import Surface
+from typing import Any, List, Union
 
 
-def setup_screen(width, height):
+def setup_screen(width: int, height: int) -> Surface:
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption("Wordle...")
     return screen
 
 
-def draw_background(screen, unguessed, font_small):
+def draw_background(screen: Surface, unguessed: str, font_small: Font):
     screen.fill("white")
     letters = font_small.render(unguessed, False, GREY)
     surface = letters.get_rect(center=(WIDTH // 2, T_MARGIN // 2))
     screen.blit(letters, surface)
 
 
-def draw_guesses(screen, guesses, input_text, answer, font):
+def draw_guesses(screen: Surface, guesses: List[Union[Any, str]], input_text: str, answer: str, font: Font):
     y = T_MARGIN
     for i in range(6):
         x = LR_MARGIN
