@@ -31,3 +31,9 @@ Enjoy the game.
 ## Technical background
 
 The game is based on [pygame](https://www.pygame.org/).
+
+## License
+
+(c) 2024 Tarun Shakthi Sreedhar
+
+Distributed under the conditions of the MIT License. See LICENSE.TXT for details.
