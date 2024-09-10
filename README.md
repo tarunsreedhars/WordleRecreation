@@ -34,6 +34,6 @@ The game is based on [pygame](https://www.pygame.org/).
 
 ## License
 
-(c) 2024 Tarun Shakthi Sreedhar
+(c) 2024 Tarun Shakthi Sreedhar, Shomesh Mishra and Venkata Naresh Vemparala
 
 Distributed under the conditions of the MIT License. See LICENSE.TXT for details.
